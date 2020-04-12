@@ -1,0 +1,26 @@
+{
+  "name": "02foodfy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidoharadl/01Foodfy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidoharadl/01Foodfy/issues"
+  },
+  "homepage": "https://github.com/davidoharadl/01Foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
