@@ -4,21 +4,23 @@
 
         <main>
             <div class="">
-                <img src="" alt="">
-                <h1></h1>
-                <p></p>
+                <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                <h1>{{recipe.title}}</h1>
+                <p>{{recipe.author}}</p>
             </div>
             <article>
                 <h2>Ingredientes</h2>
                 <ul>
-                    {# lista de ingredientes #}
+                    {% for ingredient in recipe.ingredients %}
+                        <li>{{ingredient}}</li>
+                    {% endfor %}
                 </ul>
 
                 <h2>Modo de preparo</h2>
-                <p></p>
+                <p>{{recipe.preparation}}</p>
 
                 <h2>Informações adicionais</h2>
-                <p></p>
+                <p>{{recipe.information}}</p>
 
             </article>
         </main>
