@@ -1,4 +1,11 @@
 {% extends 'layout.njk' %}
+
+            {% block nav %}
+                <nav>
+                    <a href="/about">Sobre</a>
+                    <a href="/recipe"><strong>Receitas</strong></a>
+                </nav>
+            {% endblock nav %}
     
     {% block content %}
 
@@ -32,7 +39,9 @@
                         <span id="btn-preparation"> Mostrar </span>
                     </div>
                     <div class="detail__content offVisible" id="preparation">
-                        <p>{{recipe.preparation}}</p>
+                        {% for preparation in recipe.preparation %}
+                            <p>{{preparation}}</p>
+                        {% endfor %}
                     </div>
                 </article>
             </div>
