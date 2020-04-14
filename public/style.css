@@ -139,56 +139,54 @@ article h3 {
     margin: 3% 0;
 }
 
-/* === OVERLAY === */
+/* === RECIPES-DETAIL === */
 
-.overlay {
+.banner {
     text-align: center;
+    margin: 56px auto;
 }
 
-.overlay-content {
-    width: 660px;
-    height: 413px;
-    background-color: #fff;
-    margin: 3% 20%;
-    position: fixed;
-    opacity: 0;
-    visibility: hidden;
-    border-radius: 16px;
-    padding: 3%;
+.banner img {
+    border-radius: 15px;
 }
 
-.overlay-content.visible article {
-    margin: 0 auto;
+.banner h1 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-.overlay__btn-close {
-    width: 100%;
-    
-
+.banner p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #777;
 }
 
-.btn-close {
+.detail p, .detail ul {
+    color: #444;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 1em;
+}
+
+.detail ul {
+    padding-left: 10px;
+}
+
+/* === Esconder e Mostrar === */
+
+.detail__head h2 {
+    display: inline-block;
+}
+
+.detail__head span{
     color: #999;
-    cursor: pointer;
-    margin:0;
-
-}
-.btn-close:hover {
     font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 5px;
 }
 
-/* === Change with  CSS */
-
-.offScreen {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-.visible {
-    visibility: visible;
-    opacity: 1;
+.offVisible{
+    visibility: hidden;
+    /* opacity: 1; */
 }
